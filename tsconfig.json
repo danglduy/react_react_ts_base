@@ -1,0 +1,36 @@
+{
+  "compileOnSave": false,
+  "include": [
+    "src"
+  ],
+  "compilerOptions": {
+    "strict": true,
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,   
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": false,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    "rootDir": "src",
+    "outDir": "dist",
+    "paths": {
+      "~/*": ["src/*"]
+    },
+    "lib": [
+      "dom",
+      "es2017"
+    ]
+  }
+}
