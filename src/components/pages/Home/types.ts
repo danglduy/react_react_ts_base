@@ -7,10 +7,16 @@ export interface StateProps {
 
 export interface ExternalProps {
   readonly name?: string
+  readonly handleSubmit: () => void
+}
+
+export interface FormValues {
+  readonly name?: string
 }
 
 export interface DispatchProps {
   readonly addTodoRequested?: (e: React.MouseEvent) => void
+  readonly onSubmit?: (values: FormValues) => void
 }
 
 export type Props = DispatchProps &

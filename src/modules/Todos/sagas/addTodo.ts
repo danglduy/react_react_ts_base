@@ -8,7 +8,7 @@ export function* addTodo(
   payload: TodoParams & Actions[typeof ADD_TODO_REQUESTED]
 ): SagaIterator {
   try {
-    yield put(addTodoSucceeded({ name: payload.payload }))
+    yield put(addTodoSucceeded(payload.payload))
   } catch (error) {
     yield put(addTodoFailed(error))
   }

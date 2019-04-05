@@ -4,6 +4,7 @@ import styled from 'styled-components'
 interface Props {
   readonly onClick?: (e: React.MouseEvent) => void
   readonly children: string | Node
+  readonly type?: string
 }
 
 const ButtonInner = styled.button`
@@ -18,8 +19,10 @@ const ButtonInner = styled.button`
   }
 `
 
-const Button = ({ onClick, children }: Props) => (
-  <ButtonInner onClick={onClick}>{children}</ButtonInner>
+const Button = ({ onClick, children, type }: Props) => (
+  <ButtonInner onClick={onClick} type={type}>
+    {children}
+  </ButtonInner>
 )
 
 export default Button
